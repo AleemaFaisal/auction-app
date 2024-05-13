@@ -1,0 +1,484 @@
+:root{
+  --blue: #191970;
+  --gold: #FFD700;
+  --grey: #708090;
+  --silver: #708090;
+  --amber: #FFBF00;
+}
+html, body, h1 {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* A more modern font */
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  /* A softer background color */
+  color: #333;
+  /* Darker text for better readability */
+}
+
+.login-container {
+  max-width: 400px;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Center the content for a balanced look */
+  margin: 40px auto;
+}
+
+.login-form h2 {
+  margin-bottom: 20px; /* More space above the form title */
+  color: #333;
+  font-size: 24px; /* Slightly larger for emphasis */
+}
+
+.login-form-group {
+  margin-bottom: 15px; /* Consistent spacing between form elements */
+  text-align: left; /* Aligns labels and inputs to the start */
+}
+
+.login-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px; /* Space between label and input */
+  color: black; /* Soft color for the label */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px; /* More padding for easier interaction */
+  border: 1px solid #ccc; /* Lighter border */
+  border-radius: 5px; /* Rounded edges for a softer look */
+  margin-bottom: 10px; /* Space after each input */
+  background-color: rgb(245, 244, 244);
+}
+
+.login-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: purple; /* Vibrant, consistent button color */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s; /* Smooth transition for feedback */
+}
+
+.login-form button:hover {
+  background-color: darkolivegreen; /* Darker shade on hover */
+}
+
+.login-form .signup-link {
+  margin-top: 20px; /* Space between form and sign-up link */
+}
+
+.login-form .signup-link a {
+  color: #007bff;
+  text-decoration: none; /* Removes underline */
+}
+
+.login-form .signup-link a:hover {
+  text-decoration: underline; /* Adds an underline on hover for clarity */
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 600px) {
+  .login-container {
+    padding: 20px; /* Less padding for smaller screens */
+  }
+}
+
+
+/* Additional styles for better responsiveness on smaller screens */
+@media (max-width: 768px) {
+  .auction-container {
+    margin: 40px 20px;
+    padding: 20px;
+  }
+}
+
+.landing-pg{
+  width: 100vw;
+  height: 100vh;
+  background-image: url('./imgs/main.jpg');
+  background-size: cover;
+  margin-top: 0;
+}
+
+.landing-button{
+  width: 180px;
+  height: 60px;
+  font-size: 1.5rem;
+  font-style: italic;
+  text-align: left;
+  color: white;
+  padding-left: 5px;
+  background-color: var(--blue);
+  border-color: var(--blue);
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.landing-button:hover{
+  background-color: plum;
+  border-color: plum;
+}
+
+.landing-container{
+  padding-top: 30vh;
+  padding-left: 10vw;
+}
+
+.pg{
+  width:100vw;
+  height: 100vh;
+  margin: 0;
+  padding-bottom: 5%;
+  overflow-y: scroll;
+  background-image: url('./imgs/plain.jpg');
+  background-repeat: repeat; 
+}
+
+.login.pg{
+  background-color: var(--blue);
+}
+
+.profile-ppr{
+  padding-left: 5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin: 10px;
+  height: 100%;
+  overflow-y: inherit;
+}
+
+.auction-tile{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+.auction-tile-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.time{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 0;
+}
+
+
+.browse.pg{
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  background-image: url('./imgs/pattern.png');
+  background-repeat: repeat; 
+}
+
+.search-bar{
+  margin: 20px auto;
+  width: 40%;
+  min-width: 300px;
+  max-width: 800px;
+  height: 1.6rem;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  justify-content: left;
+}
+
+.search-input{
+  border-radius: 5px;
+  padding: 2px;
+  height: 1.4rem;
+  border-color: transparent;
+  background-color: rgb(234, 230, 230);  
+}
+
+.search-icon{
+  height: 1.2rem;
+  width: 1.2rem;
+  margin-top: 3px;
+  color: plum;
+}
+
+.search-icon:hover{
+  color: whitesmoke;
+}
+
+.search-button{
+  background-color: transparent;
+  border: transparent;
+}
+
+.auction-container {
+  max-width: 600px;
+  margin: 40px auto;
+  /* Centers the container with more vertical space */
+  padding: 40px;
+  /* More padding for a spacious layout */
+  background-color: #fff;
+  border: 1px solid #eaeaea;
+  /* Lighter border color */
+  border-radius: 12px;
+  /* Softer rounded corners */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  /* Subtler shadow for depth */
+}
+
+.auction-container h1 {
+  color: #007bff;
+  /* A modern, vibrant color */
+  font-size: 24px;
+  /* Adjusted size for emphasis */
+  text-align: center;
+  /* Center-align the title for focus */
+  margin-bottom: 30px;
+  /* More space after the title */
+}
+
+.auction-container form {
+  display: grid;
+  gap: 20px;
+  /* Uniform spacing between form elements */
+}
+
+.auction-container label {
+  font-size: 16px;
+  /* Slightly larger label text */
+  color: #555;
+  /* Soft color for the labels */
+}
+
+.auction-container input[type="text"],
+.auction-container input[type="number"],
+.auction-container  textarea,
+.auction-container input[type="datetime-local"],
+.auction-container input[type="file"] {
+  padding: 12px;
+  /* Increased padding for better interaction */
+  border: 2px solid #eaeaea;
+  /* Softer border */
+  border-radius: 8px;
+  /* More pronounced rounded edges */
+  background-color: #f9f9f9;
+  /* Slight background color for input fields */
+  transition: border-color 0.3s;
+  /* Smooth transition for focus */
+}
+
+.auction-container input[type="text"]:focus,
+.auction-container input[type="number"]:focus,
+.auction-container textarea:focus,
+.auction-container input[type="datetime-local"]:focus,
+.auction-container input[type="file"]:focus {
+  border-color: #007bff;
+  /* Highlight focus with a vibrant color */
+}
+
+.auction-container textarea {
+  resize: vertical;
+  /* Allows vertical resizing only */
+}
+
+.auction-container button {
+  padding: 12px 20px;
+  border: none;
+  /* Cleaner look without border */
+  border-radius: 8px;
+  background-color: #007bff;
+  /* Consistent vibrant button color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  /* Smooth background transition */
+}
+
+.auction-container button:hover {
+  background-color: #0056b3;
+  /* Darker shade on hover */
+}
+
+/* Enhances the file input for a more unified appearance */
+.auction-container input[type="file"] {
+  cursor: pointer;
+}
+
+.auction-card{
+  margin: 50px auto;
+  border: 3px solid grey;
+  border-radius: 5px;
+  box-shadow: 3px 5px silver;
+  width: 60%;
+  background-color: white;
+  padding: 10px;
+}
+
+.bid{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-image: linear-gradient(to bottom right, hwb(280 56% 2%), purple);
+  border-radius: 10px;
+}
+
+.top{
+  background-image: linear-gradient(to bottom right, hwb(63 56% 2%), gold);
+}
+
+.bid-button{
+  width: 120px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  padding: 10px;
+  font-size: 0.9rem;
+  color: white;
+  background-color: #8a2be2; /* Purple background */
+  border: none;
+  margin: 5px;
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover transition */
+  display: inline-flex; /* Use flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center;
+}
+.bid-button:hover {
+  background-color: #6a0dad; /* Darker shade of purple on hover */
+}
+
+.bid-input{
+  font-size: 1.2rem;
+  border: 2px solid #8a2be2; /* Purple border */
+  border-radius: 5px; /* Rounded corners */
+  outline: none; /* Remove default focus outline */
+}
+
+.display-auctions{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.button-fancy{
+  border-radius: 5px;
+  border: 1px solid silver;
+  height: 1.7rem;
+  background-color: rgb(63, 8, 63);
+  color: white;
+} 
+
+.button-fancy:hover{
+  background-color: var(--amber);
+  color: white;
+  transition: background-color 0.3s; /* Smooth transition for feedback */
+
+}
+
+.auction-title{
+  background-color: rgb(54, 2, 54);
+  color: white;
+  padding: 5px;
+  font-size: 1.2rem;
+  display: inline-block; 
+  padding: 10px 30px; 
+  border-radius: 20px !important;
+  font-style: italic;
+  text-align: center;
+}
+
+.auction-desc{
+  background-color: rgb(230, 230, 230);
+  font-style: italic;
+  display: inline-block; 
+  padding: 10px 30px; 
+  border-radius: 20px;
+  margin-left:2rem;
+  text-align: center;
+}
+
+.specific{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.auction-title-box{
+  display: flex;
+  align-items: center;
+}
+
+.auction-price{
+  border-radius: 10px;
+  display: inline-block;
+  border-radius: 70px !important;
+  color: white; /* Text color */
+  background-color: rgb(41, 2, 41); /* Background color */
+  padding: 10px; /* Adjust padding as needed */
+  border-radius: 5px; /* Rounded corners */
+}
+
+.bids{
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  justify-content: center;
+  align-items: center;
+}
+
+.winner{
+  background-color: gold;
+  color: purple;
+  text-shadow: 0 0 10px rgba(253, 243, 254, 0.7), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1); /* Glowing effect */
+  animation: glow 1.5s infinite alternate;
+}
+
+.change-pass input{
+  height: 1.4rem;
+  border: 2px solid silver;
+  border-radius: 5px;
+}
+
+.auctions-grid{
+  margin-left: 10px;
+  margin-bottom: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 10px;
+}
+
+.glow {
+  text-shadow: 0 0 10px rgba(247, 174, 252, 0.7), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1); /* Glowing effect */
+  animation: glow 1.5s infinite alternate; /* Animation for glowing effect */
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.7), 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.3), 0 0 40px rgba(255, 255, 255, 0.1);
+  }
+  to {
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 30px rgba(255, 255, 255, 0.7), 0 0 40px rgba(255, 255, 255, 0.5), 0 0 50px rgba(255, 255, 255, 0.3);
+  }
+}
